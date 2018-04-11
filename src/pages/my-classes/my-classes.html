@@ -12,4 +12,5 @@
   <ion-item>
       <button ion-button block (click)='addCourseModal();'>Add Class</button>
   </ion-item>
+  <ion-item *ngFor="let course of courses" (click)='showCourseInformation(course);'>{{course.courseTitle}} - {{course.courseInstructor}}</ion-item>
 </ion-content>
